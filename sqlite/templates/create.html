@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQLite</title>
+</head>
+<body>
+
+    <form action="/create" method="POST">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" />
+        <label for="age">Age</label>
+        <input type="text" id="age" name="age" />
+        <button type="submit">Submit</button>
+    </form>
+
+    {% if message %}
+        {{message}}
+    {% endif %}
+
+    <a type="button" href="/readrecord">Read Database</a>
+    <a type="button" href="/update">Update Record</a>
+    <a type="button" href="/delete">Delete Record</a>
+</body>
+</html>
